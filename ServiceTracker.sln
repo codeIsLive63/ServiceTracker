@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTracker", "ServiceTracker.csproj", "{FD338045-06B4-4423-B30B-2B5F9E4A39FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTracker.Domain", "ServiceTracker.Domain\ServiceTracker.Domain.csproj", "{CF3FB7FF-C007-4A1E-9D87-7D91029FBDD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FD338045-06B4-4423-B30B-2B5F9E4A39FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD338045-06B4-4423-B30B-2B5F9E4A39FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD338045-06B4-4423-B30B-2B5F9E4A39FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3FB7FF-C007-4A1E-9D87-7D91029FBDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3FB7FF-C007-4A1E-9D87-7D91029FBDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3FB7FF-C007-4A1E-9D87-7D91029FBDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3FB7FF-C007-4A1E-9D87-7D91029FBDD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

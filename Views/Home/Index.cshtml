@@ -1,8 +1,31 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IAsyncEnumerable<Record>
+
+@{
+    ViewData["Title"] = "Главная страница";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Список записей</h1>
 </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Дата</th>
+            <th>Причина</th>
+            <th>Статус</th>
+        </tr>
+    </thead>
+    <tbody>
+        @await foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.Name</td>
+                <td>@record.Date</td>
+                <td>@record.ReasonDescription</td>
+                <td>@record.ReturnStatus</td>
+            </tr>
+        }
+    </tbody>
+</table>
